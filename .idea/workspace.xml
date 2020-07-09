@@ -2,23 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5aa861c7-7b4d-4325-9a6c-218c3b2a9226" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/login/assets/login.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/login/assets/logo.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/login/index.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/login/login.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/login/register.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/login/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/login/assets/background.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/login/assets/burger.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/login/assets/pizza.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/login/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login/style.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,11 +29,13 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/node_modules/@types/react/index.d.ts" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/login/assets" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="show.migrate.to.gradle.popup" value="false" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2019.3.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -100,42 +93,66 @@
       <workItem from="1594136764666" duration="1102000" />
       <workItem from="1594141488268" duration="575000" />
       <workItem from="1594188742167" duration="1597000" />
-      <workItem from="1594274495708" duration="2256000" />
+      <workItem from="1594274495708" duration="16215000" />
     </task>
+    <task id="LOCAL-00001" summary="login register UI created">
+      <created>1594276901643</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1594276901643</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="login register UI created" />
+    <option name="LAST_COMMIT_MESSAGE" value="login register UI created" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="552" y="179" key="#File_Watchers" timestamp="1594276230879">
+    <state x="552" y="179" key="#File_Watchers" timestamp="1594283215291">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="179" key="#File_Watchers/0.0.1920.1040@0.0.1920.1040" timestamp="1594276230879" />
+    <state x="552" y="179" key="#File_Watchers/0.0.1920.1040@0.0.1920.1040" timestamp="1594283215291" />
+    <state x="210" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1594292599507">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="210" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594292599507" />
+    <state x="302" y="115" key="CommitChangelistDialog2" timestamp="1594276900759">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="302" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1594276900759" />
     <state x="594" y="299" key="EditFileWatcherDialog" timestamp="1594275875037">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="594" y="299" key="EditFileWatcherDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594275875037" />
-    <state width="1386" height="290" key="GridCell.Tab.0.bottom" timestamp="1594276868306">
+    <state width="1386" height="290" key="GridCell.Tab.0.bottom" timestamp="1594285898657">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1386" height="290" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594276868306" />
-    <state width="1386" height="290" key="GridCell.Tab.0.center" timestamp="1594276868305">
+    <state width="1386" height="290" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594285898657" />
+    <state width="1386" height="290" key="GridCell.Tab.0.center" timestamp="1594285898657">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1386" height="290" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594276868305" />
-    <state width="1386" height="290" key="GridCell.Tab.0.left" timestamp="1594276868305">
+    <state width="1386" height="290" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594285898657" />
+    <state width="1386" height="290" key="GridCell.Tab.0.left" timestamp="1594285898657">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1386" height="290" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594276868305" />
-    <state width="1386" height="290" key="GridCell.Tab.0.right" timestamp="1594276868306">
+    <state width="1386" height="290" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594285898657" />
+    <state width="1386" height="290" key="GridCell.Tab.0.right" timestamp="1594285898657">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1386" height="290" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594276868306" />
+    <state width="1386" height="290" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594285898657" />
     <state x="461" y="163" key="SettingsEditor" timestamp="1594190572699">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1594190572699" />
+    <state x="315" y="254" key="Vcs.Push.Dialog.v2" timestamp="1594277092878">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="315" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1594277092878" />
     <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1594274496204">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

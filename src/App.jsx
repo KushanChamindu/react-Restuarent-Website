@@ -1,6 +1,9 @@
 import React from "react";
 import "./App.scss";
 import { Login, Register } from "./components/login/index";
+import loginImg from "./components/login/assets/login.svg";
+import pizza from  "./components/login/assets/pizza.svg"
+import burger from  "./components/login/assets/burger.svg"
 
 class App extends React.Component {
     constructor(props) {
@@ -34,22 +37,26 @@ class App extends React.Component {
         const currentActive = isLogginActive ? "login" : "register";
         return (
             <div className="App">
-                <div className="login">
-                    <div className="container" ref={ref => (this.container = ref)}>
-                        {isLogginActive && (
-                            <Login containerRef={ref => (this.current = ref)} />
-                        )}
-                        {!isLogginActive && (
-                            <Register containerRef={ref => (this.current = ref)} />
-                        )}
+                <div className="background">
+                    <div className="login">
+                        <div className="container" ref={ref => (this.container = ref)}>
+
+                            {isLogginActive && (
+                                <Login containerRef={ref => (this.current = ref)} />
+                            )}
+                            {!isLogginActive && (
+                                <Register containerRef={ref => (this.current = ref)} />
+                            )}
+                        </div>
+                        <RightSide
+                            current={current}
+                            currentActive={currentActive}
+                            containerRef={ref => (this.rightSide = ref)}
+                            onClick={this.changeState.bind(this)}
+                        />
                     </div>
-                    <RightSide
-                        current={current}
-                        currentActive={currentActive}
-                        containerRef={ref => (this.rightSide = ref)}
-                        onClick={this.changeState.bind(this)}
-                    />
                 </div>
+
             </div>
         );
     }
@@ -64,6 +71,7 @@ const RightSide = props => {
         >
             <div className="inner-container">
                 <div className="text">{props.current}</div>
+                <img className="transsionImage" src={pizza} />
             </div>
         </div>
     );
