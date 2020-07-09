@@ -1,20 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5aa861c7-7b4d-4325-9a6c-218c3b2a9226" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/components/login/assets/background.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/login/assets/burger.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/login/assets/pizza.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+    <list default="true" id="5aa861c7-7b4d-4325-9a6c-218c3b2a9226" name="Default Changelist" comment="integrate with firebase">
+      <change afterPath="$PROJECT_DIR$/src/components/home/home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/login/start.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/database/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/login/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/login/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/login/login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login/login.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/login/register.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login/register.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/login/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login/style/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/config/firebse.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/firebse.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -38,6 +51,12 @@
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\IntelliJ IDEA 2019.3.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Test\Flutter restuarant web site\restuatrent-website\src\components\login\style" />
+      <recent name="D:\Test\Flutter restuarant web site\restuatrent-website\src\components\login" />
+      <recent name="D:\Test\Flutter restuarant web site\restuatrent-website\src\components\login\assets" />
+      <recent name="D:\Test\Flutter restuarant web site\restuatrent-website\src\components\home" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Test\Flutter restuarant web site\restuatrent-website\src\components\login\assets" />
       <recent name="D:\Test\Flutter restuarant web site\restuatrent-website\src\Component" />
@@ -79,6 +98,7 @@
         </serviceView>
       </list>
     </option>
+    <option name="showServicesTree" value="false" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -93,7 +113,7 @@
       <workItem from="1594136764666" duration="1102000" />
       <workItem from="1594141488268" duration="575000" />
       <workItem from="1594188742167" duration="1597000" />
-      <workItem from="1594274495708" duration="16215000" />
+      <workItem from="1594274495708" duration="34447000" />
     </task>
     <task id="LOCAL-00001" summary="login register UI created">
       <created>1594276901643</created>
@@ -102,7 +122,42 @@
       <option name="project" value="LOCAL" />
       <updated>1594276901643</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="login register UI finished">
+      <created>1594295433244</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1594295433244</updated>
+    </task>
+    <task id="LOCAL-00003" summary="integrate with firebase">
+      <created>1594315542635</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1594315542635</updated>
+    </task>
+    <task id="LOCAL-00004" summary="integrate with firebase">
+      <created>1594315616908</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1594315616908</updated>
+    </task>
+    <task id="LOCAL-00005" summary="integrate with firebase">
+      <created>1594315685291</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1594315685291</updated>
+    </task>
+    <task id="LOCAL-00006" summary="integrate with firebase">
+      <created>1594315741039</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1594315741039</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -110,52 +165,66 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="login register UI created" />
-    <option name="LAST_COMMIT_MESSAGE" value="login register UI created" />
+    <MESSAGE value="login register UI finished" />
+    <MESSAGE value="integrate with firebase" />
+    <option name="LAST_COMMIT_MESSAGE" value="integrate with firebase" />
   </component>
   <component name="WindowStateProjectService">
     <state x="552" y="179" key="#File_Watchers" timestamp="1594283215291">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="179" key="#File_Watchers/0.0.1920.1040@0.0.1920.1040" timestamp="1594283215291" />
-    <state x="210" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1594292599507">
+    <state x="734" y="324" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1594314104514">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="210" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594292599507" />
-    <state x="302" y="115" key="CommitChangelistDialog2" timestamp="1594276900759">
+    <state x="734" y="324" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1594314104514" />
+    <state x="210" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1594315667848">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="302" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1594276900759" />
+    <state x="210" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594315667848" />
+    <state x="302" y="115" key="CommitChangelistDialog2" timestamp="1594315972178">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="302" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1594315972178" />
+    <state x="0" y="92" key="DiffContextDialog" timestamp="1594315970900">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="0" y="92" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594315970900" />
     <state x="594" y="299" key="EditFileWatcherDialog" timestamp="1594275875037">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="594" y="299" key="EditFileWatcherDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594275875037" />
-    <state width="1386" height="290" key="GridCell.Tab.0.bottom" timestamp="1594285898657">
+    <state width="1877" height="479" key="GridCell.Tab.0.bottom" timestamp="1594315879028">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1386" height="290" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594285898657" />
-    <state width="1386" height="290" key="GridCell.Tab.0.center" timestamp="1594285898657">
+    <state width="1877" height="479" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594315879028" />
+    <state width="1877" height="479" key="GridCell.Tab.0.center" timestamp="1594315879027">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1386" height="290" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594285898657" />
-    <state width="1386" height="290" key="GridCell.Tab.0.left" timestamp="1594285898657">
+    <state width="1877" height="479" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594315879027" />
+    <state width="1877" height="479" key="GridCell.Tab.0.left" timestamp="1594315879027">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1386" height="290" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594285898657" />
-    <state width="1386" height="290" key="GridCell.Tab.0.right" timestamp="1594285898657">
+    <state width="1877" height="479" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594315879027" />
+    <state width="1877" height="479" key="GridCell.Tab.0.right" timestamp="1594315879027">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1386" height="290" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594285898657" />
+    <state width="1877" height="479" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594315879027" />
     <state x="461" y="163" key="SettingsEditor" timestamp="1594190572699">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="163" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1594190572699" />
-    <state x="315" y="254" key="Vcs.Push.Dialog.v2" timestamp="1594277092878">
+    <state x="315" y="254" key="Vcs.Push.Dialog.v2" timestamp="1594315909490">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="315" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1594277092878" />
+    <state x="315" y="254" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1594315909490" />
     <state x="656" y="345" key="com.intellij.ide.util.TipDialog" timestamp="1594274496204">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="656" y="345" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594274496204" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1594298195002">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1594298195002" />
   </component>
 </project>

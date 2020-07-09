@@ -1,80 +1,48 @@
 import React from "react";
 import "./App.scss";
-import { Login, Register } from "./components/login/index";
-import loginImg from "./components/login/assets/login.svg";
-import pizza from  "./components/login/assets/pizza.svg"
-import burger from  "./components/login/assets/burger.svg"
+import {Login, Register} from "./components/login/index";
+import {Auth} from "./database/auth"
+import {Home} from "./components/home/home";
+import Start from "./components/login/start";
+import fire from "./config/firebse";
 
 class App extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            isLogginActive: true
+            user: null
         };
     }
 
     componentDidMount() {
-        //Add .right by default
-        this.rightSide.classList.add("right");
+        this.authListener();
     }
 
-    changeState() {
-        const { isLogginActive } = this.state;
-
-        if (isLogginActive) {
-            this.rightSide.classList.remove("right");
-            this.rightSide.classList.add("left");
-        } else {
-            this.rightSide.classList.remove("left");
-            this.rightSide.classList.add("right");
-        }
-        this.setState(prevState => ({ isLogginActive: !prevState.isLogginActive }));
+    authListener() {
+        // Auth.login_listener().then((user) => {
+        //     if (user) {
+        //         this.setState({user})
+        //     } else {
+        //         this.setState({user: null})
+        //     }
+        // })
+        fire.auth().onAuthStateChanged(user=>{
+            if (user){
+                this.setState({user})
+            }else{
+                this.setState({user: null})
+            }
+        })
     }
 
     render() {
-        const { isLogginActive } = this.state;
-        const current = isLogginActive ? "Register" : "Login";
-        const currentActive = isLogginActive ? "login" : "register";
         return (
             <div className="App">
-                <div className="background">
-                    <div className="login">
-                        <div className="container" ref={ref => (this.container = ref)}>
-
-                            {isLogginActive && (
-                                <Login containerRef={ref => (this.current = ref)} />
-                            )}
-                            {!isLogginActive && (
-                                <Register containerRef={ref => (this.current = ref)} />
-                            )}
-                        </div>
-                        <RightSide
-                            current={current}
-                            currentActive={currentActive}
-                            containerRef={ref => (this.rightSide = ref)}
-                            onClick={this.changeState.bind(this)}
-                        />
-                    </div>
-                </div>
-
+                {this.state.user ? <Home/> :
+                    <Start/>}
             </div>
         );
     }
 }
-
-const RightSide = props => {
-    return (
-        <div
-            className="right-side"
-            ref={props.containerRef}
-            onClick={props.onClick}
-        >
-            <div className="inner-container">
-                <div className="text">{props.current}</div>
-                <img className="transsionImage" src={pizza} />
-            </div>
-        </div>
-    );
-};
 
 export default App;
