@@ -1,16 +1,16 @@
 import firebase from "firebase";
+import {ENV} from "../ENV"
 
-
-console.log(process.env);
+console.log(ENV.KEY.REACT_APP_FIREBASE_API_KEY);
 const firebaseConfig = {
-    apiKey: process.env.REACT_APP_FIREBASE_API_KEY,
-    authDomain: process.env.REACT_APP_FIREBASE_AUTH_DOMAIN,
-    databaseURL: process.env.REACT_APP_FIREBASE_DATABASE_URL,
-    projectId: process.env.REACT_APP_FIREBASE_PROJECT_ID,
-    storageBucket: process.env.REACT_APP_FIREBASE_STORAGE_BUCKET,
-    messagingSenderId: process.env.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
-    appId: process.env.REACT_APP_FIREBASE_APP_ID,
-    measurementId: process.env.REACT_APP_FIREBASE_MEASUREMENT_ID
+    apiKey: ENV.KEY.REACT_APP_FIREBASE_API_KEY,
+    authDomain: ENV.KEY.REACT_APP_FIREBASE_AUTH_DOMAIN,
+    databaseURL: ENV.KEY.REACT_APP_FIREBASE_DATABASE_URL,
+    projectId: ENV.KEY.REACT_APP_FIREBASE_PROJECT_ID,
+    storageBucket:ENV.KEY.REACT_APP_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: ENV.KEY.REACT_APP_FIREBASE_MESSAGING_SENDER_ID,
+    appId: ENV.KEY.REACT_APP_FIREBASE_APP_ID,
+    measurementId:ENV.KEY.REACT_APP_FIREBASE_MEASUREMENT_ID
 };
 const  fire = firebase.initializeApp(firebaseConfig);
 

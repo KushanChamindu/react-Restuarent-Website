@@ -1,20 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5aa861c7-7b4d-4325-9a6c-218c3b2a9226" name="Default Changelist" comment="integrate with firebase">
-      <change afterPath="$PROJECT_DIR$/src/components/home/home.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/login/start.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/database/auth.js" afterDir="false" />
+    <list default="true" id="5aa861c7-7b4d-4325-9a6c-218c3b2a9226" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/login/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login/index.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/login/login.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login/login.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/login/register.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login/register.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/login/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/login/style/style.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/config/firebse.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/config/firebse.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -42,7 +32,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="add_unversioned_files" value="$PROJECT_DIR$/node_modules/@types/react/index.d.ts" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/node_modules/@types/react/index.d.ts&#10;D:/Test/Flutter restuarant web site/restuatrent-website/.env-cmdrc" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/login/assets" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -52,21 +42,42 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Test\Flutter restuarant web site\restuatrent-website\src" />
+      <recent name="D:\Test\Flutter restuarant web site\restuatrent-website\src\database" />
       <recent name="D:\Test\Flutter restuarant web site\restuatrent-website\src\components\login\style" />
       <recent name="D:\Test\Flutter restuarant web site\restuatrent-website\src\components\login" />
       <recent name="D:\Test\Flutter restuarant web site\restuatrent-website\src\components\login\assets" />
-      <recent name="D:\Test\Flutter restuarant web site\restuatrent-website\src\components\home" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Test\Flutter restuarant web site\restuatrent-website\src\components\login\assets" />
       <recent name="D:\Test\Flutter restuarant web site\restuatrent-website\src\Component" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.start">
+  <component name="RunManager" selected="npm.start-dev">
     <configuration name="App.jsx" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/App.jsx" working-dir="$PROJECT_DIR$/src">
       <method v="2" />
     </configuration>
     <configuration name="index.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/src/index.js" working-dir="$PROJECT_DIR$/src">
+      <method v="2" />
+    </configuration>
+    <configuration name="build-dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build-dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="start-dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start-dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
       <method v="2" />
     </configuration>
     <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
@@ -82,6 +93,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.start" />
+        <item itemvalue="npm.start-dev" />
+        <item itemvalue="npm.build-dev" />
         <item itemvalue="Node.js.App.jsx" />
         <item itemvalue="Node.js.index.js" />
       </list>
@@ -113,7 +126,7 @@
       <workItem from="1594136764666" duration="1102000" />
       <workItem from="1594141488268" duration="575000" />
       <workItem from="1594188742167" duration="1597000" />
-      <workItem from="1594274495708" duration="34447000" />
+      <workItem from="1594274495708" duration="36686000" />
     </task>
     <task id="LOCAL-00001" summary="login register UI created">
       <created>1594276901643</created>
@@ -157,7 +170,14 @@
       <option name="project" value="LOCAL" />
       <updated>1594315741039</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="integrate with firebase">
+      <created>1594316002522</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1594316002522</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,34 +202,34 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="210" y="271" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594315667848" />
-    <state x="302" y="115" key="CommitChangelistDialog2" timestamp="1594315972178">
+    <state x="302" y="115" key="CommitChangelistDialog2" timestamp="1594316001938">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="302" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1594315972178" />
-    <state x="0" y="92" key="DiffContextDialog" timestamp="1594315970900">
+    <state x="302" y="115" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1594316001938" />
+    <state x="0" y="92" key="DiffContextDialog" timestamp="1594315997108">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="0" y="92" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594315970900" />
+    <state x="0" y="92" key="DiffContextDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594315997108" />
     <state x="594" y="299" key="EditFileWatcherDialog" timestamp="1594275875037">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="594" y="299" key="EditFileWatcherDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1594275875037" />
-    <state width="1877" height="479" key="GridCell.Tab.0.bottom" timestamp="1594315879028">
+    <state width="1877" height="479" key="GridCell.Tab.0.bottom" timestamp="1594317988712">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="479" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594315879028" />
-    <state width="1877" height="479" key="GridCell.Tab.0.center" timestamp="1594315879027">
+    <state width="1877" height="479" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1594317988712" />
+    <state width="1877" height="479" key="GridCell.Tab.0.center" timestamp="1594317988711">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="479" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594315879027" />
-    <state width="1877" height="479" key="GridCell.Tab.0.left" timestamp="1594315879027">
+    <state width="1877" height="479" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1594317988711" />
+    <state width="1877" height="479" key="GridCell.Tab.0.left" timestamp="1594317988711">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="479" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594315879027" />
-    <state width="1877" height="479" key="GridCell.Tab.0.right" timestamp="1594315879027">
+    <state width="1877" height="479" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1594317988711" />
+    <state width="1877" height="479" key="GridCell.Tab.0.right" timestamp="1594317988711">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="479" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594315879027" />
+    <state width="1877" height="479" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1594317988711" />
     <state x="461" y="163" key="SettingsEditor" timestamp="1594190572699">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -226,5 +246,17 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1594298195002" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/ENV.js</url>
+          <line>2</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
