@@ -93,3 +93,20 @@
     margin-top: 2em;
   }
 }
+//Button
+.btn {
+  border-radius: 15px;
+  font-size: 21px;
+  padding: 15px 50px 20px 50px;
+  border: 0;
+  background-color: #3498db;
+  color: #fff;
+  transition: all 250ms ease-in-out;
+  cursor: pointer;
+  &:hover {
+    background-color: #2386c8;
+  }
+  &:focus {
+    outline: none;
+  }
+}

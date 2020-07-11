@@ -3,6 +3,7 @@ import loginImg from "./assets/login.svg";
 import "./style/style.scss"
 import {Auth} from "../../database/auth";
 import $ from "jquery";
+import {LoadingComponent} from "../loading/loadingComponent";
 
 
 export class Register extends React.Component {
@@ -18,6 +19,7 @@ export class Register extends React.Component {
             isValidPassword: "valid",
             username: "",
             isValidUsername: "valid",
+            loadingStatus:false
         }
     }
 
@@ -42,6 +44,7 @@ export class Register extends React.Component {
             }
         };
         if(this.validation(email) & this.validation(password) & this.validation(username)){
+            this.setState({loadingStatus: true});
             Auth.signUp(this.state.email, this.state.password, this.state.username).then((err) => {
                 if (err['message'] === undefined && err['code']===undefined) {
                     console.log(err);
@@ -64,6 +67,7 @@ export class Register extends React.Component {
                     }
                     console.log(err)
                 }
+                this.setState({loadingStatus: false});
             });
         }
     }
@@ -193,9 +197,10 @@ export class Register extends React.Component {
                     </div>
                 </div>
                 <div className="footer">
-                    <button type="submit" className="btn" onClick={this.signUp}>
+                    {!this.state.loadingStatus && <button type="submit" className="btn" onClick={this.signUp}>
                         Register
-                    </button>
+                    </button>}
+                    {(this.state.loadingStatus && <LoadingComponent/>)}
                 </div>
             </div>
         );
