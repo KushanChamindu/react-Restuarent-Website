@@ -11,7 +11,7 @@ export class Login extends React.Component {
         this.handleChange=this.handleChange.bind(this);
         this.validation=this.validation.bind(this);
         this.state = {
-            email: "",
+            email: '',
             isValidEmail:"valid",
             password: "",
             isValidPassword:"valid"
@@ -23,73 +23,88 @@ export class Login extends React.Component {
 
     login(e) {
         e.preventDefault();
-        Auth.login(this.state.email, this.state.password).then((err)=>{
-            if (err['message'] === undefined && err['code']===undefined) {
-                console.log(err);
-            } else {
-                // this.validation();
-                if(err.code.includes('email')){
-                    let valueSet={content:{
-                            name:'email',
-                            value: 'firebase',
-                            message:err.message
-                        }};
-                    this.validation(valueSet)
-                }else if(err.code.includes('user-not-found')){
-                    let valueSet={content:{
-                            name:'email',
-                            value: 'firebase',
-                            message:err.message
-                        }};
-                    this.validation(valueSet)
+        let email={content:{
+                name:'email',
+                value: this.state.email
+            }};
+        let password={content:{
+                name:'password',
+                value: this.state.password
+            }};
+        if(this.validation(email) & this.validation(password)){
+            Auth.login(this.state.email, this.state.password).then((err)=>{
+                if (err['message'] === undefined && err['code']===undefined) {
+                    console.log(err);
+                } else {
+                    // this.validation();
+                    if(err.code.includes('email')){
+                        let valueSet={content:{
+                                name:'email',
+                                value: 'firebase',
+                                message:err.message
+                            }};
+                        this.validation(valueSet)
+                    }else if(err.code.includes('user-not-found')){
+                        let valueSet={content:{
+                                name:'email',
+                                value: 'firebase',
+                                message:err.message
+                            }};
+                        this.validation(valueSet)
+                    }
+                    console.log(err)
                 }
-                console.log(err)
-            }
-        });
+            });
+        }
 
     }
     validation(valueSet) {
         if(valueSet.content.name === "email"){
             if(valueSet.content.value=== 'firebase'){
-                $('#emailValidator').removeClass('valid');
-                $('#emailValidator').addClass('not-valid');
-                console.log('asdad');
+                $('#emailValidator-login').removeClass('valid');
+                $('#emailValidator-login').addClass('not-valid');
                 this.setState({
                     isValidEmail: valueSet.content.message
-                })
+                });
+                return false;
             }else  if(valueSet.content.value=== ''){
-                $('#emailValidator').removeClass('valid');
-                $('#emailValidator').addClass('not-valid');
+                $('#emailValidator-login').removeClass('valid');
+                $('#emailValidator-login').addClass('not-valid');
                 this.setState({
                     isValidEmail:"Email should not empty"
                 });
+                return false;
             }else if(valueSet.content.value!== ''){
-                $('#emailValidator').removeClass('not-valid');
-                $('#emailValidator').addClass('valid');
+                $('#emailValidator-login').removeClass('not-valid');
+                $('#emailValidator-login').addClass('valid');
                 this.setState({
                     isValidEmail:"valid"
-                })
+                });
+                return true;
             }
-        }else if(valueSet.content.name === "password"){
+        }
+        else if(valueSet.content.name === "password"){
             if(valueSet.content.value=== 'firebase'){
-                $('#passwordValidator').removeClass('valid');
-                $('#passwordValidator').addClass('not-valid');
-                console.log('asdad');
+                $('#passwordValidator-login').removeClass('valid');
+                $('#passwordValidator-login').addClass('not-valid');
                 this.setState({
                     isValidEmail: valueSet.content.message
-                })
+                });
+                return false;
             }else if(valueSet.content.value=== ''){
-                $('#passwordValidator').removeClass('valid');
-                $('#passwordValidator').addClass('not-valid');
+                $('#passwordValidator-login').removeClass('valid');
+                $('#passwordValidator-login').addClass('not-valid');
                 this.setState({
                     isValidPassword:"Password should not empty"
                 });
+                return false;
             }else if(valueSet.content.value!== ''){
-                $('#passwordValidator').removeClass('not-valid');
-                $('#passwordValidator').addClass('valid');
+                $('#passwordValidator-login').removeClass('not-valid');
+                $('#passwordValidator-login').addClass('valid');
                 this.setState({
                     isValidPassword:"valid "
-                })
+                });
+                return true;
             }
         }
     }
@@ -99,7 +114,7 @@ export class Login extends React.Component {
                 name:e.target.name,
                 value: e.target.value
             }};
-        this.validation(valueSet);
+        let validation=this.validation(valueSet);
         this.setState({
             [e.target.name]:e.target.value
         })
@@ -112,20 +127,20 @@ export class Login extends React.Component {
                     <div className="image">
                         <img src={loginImg}/>
                     </div>
-                    <div className="form">
+                    <form className="form">
                         <div className="form-group">
                             <label htmlFor="Email">Email</label>
                             <input type="email" name="email" placeholder="email" value={this.state.email}
                                    onChange={this.handleChange}/>
-                            <span id="emailValidator" className="valid">{this.state.isValidEmail}</span>
+                            <span id="emailValidator-login" className="valid">{this.state.isValidEmail}</span>
                         </div>
                         <div className="form-group">
                             <label htmlFor="password">Password</label>
                             <input type="password" name="password" placeholder="password" value={this.state.password}
                                    onChange={this.handleChange}/>
-                            <span id="passwordValidator" className="valid">{this.state.isValidPassword}</span>
+                            <span id="passwordValidator-login" className="valid">{this.state.isValidPassword}</span>
                         </div>
-                    </div>
+                    </form>
                 </div>
                 <div className="footer">
                     <button type="submit" className="btn" onClick={this.login}>

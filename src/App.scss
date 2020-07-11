@@ -40,7 +40,21 @@
 .App-link {
   color: #61dafb;
 }
-
+.appearance-false{
+  display: flex;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+}
+.appearance-true{
+  display: flex;
+  opacity: 1;
+  transition: opacity 0.7s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
