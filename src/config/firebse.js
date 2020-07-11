@@ -1,7 +1,6 @@
 import firebase from "firebase";
 import {ENV} from "../ENV"
 
-console.log(ENV.KEY.REACT_APP_FIREBASE_API_KEY);
 const firebaseConfig = {
     apiKey: ENV.KEY.REACT_APP_FIREBASE_API_KEY,
     authDomain: ENV.KEY.REACT_APP_FIREBASE_AUTH_DOMAIN,
