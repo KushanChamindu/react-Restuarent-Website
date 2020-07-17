@@ -4,6 +4,7 @@ import "./style/style.scss"
 import {Auth} from "../../database/auth";
 import $ from "jquery";
 import {LoadingComponent} from "../loading/loadingComponent";
+import swal from "sweetalert";
 
 
 export class Register extends React.Component {
@@ -50,24 +51,41 @@ export class Register extends React.Component {
                     console.log(err);
                 } else {
                     // this.validation();
-                    if(err.code.includes('email')){
+                    if(err.code.includes('email-already-in-use')){
                         let valueSet={content:{
                                 name:'email',
                                 value: 'firebase',
-                                message:err.message
+                                message:"The email address is already in use by another account"
                             }};
-                        this.validation(valueSet)
-                    }else if(err.code.includes('user-not-found')){
+                        this.validation(valueSet);
+                        swal({
+                            title: "This email address already taken!",
+                            icon: "warning",
+                            dangerMode: true,
+                        });
+                    }else if(err.code.includes('email')){
                         let valueSet={content:{
                                 name:'email',
                                 value: 'firebase',
-                                message:err.message
+                                message:"Email badly formatted"
                             }};
                         this.validation(valueSet)
+                    }else if (err.code.includes('network-request-failed')) {
+                        swal({
+                            title: "Something went wrong check your internet connection",
+                            icon: "warning",
+                            dangerMode: true,
+                        });
+                    }else if (err.code.includes('auth/too-many-requests')) {
+                        swal({
+                            title: "Too many unsuccessful login attempts. Please try again later.",
+                            icon: "warning",
+                            dangerMode: true,
+                        });
                     }
-                    console.log(err)
+                    console.log(err);
+                    this.setState({loadingStatus: false});
                 }
-                this.setState({loadingStatus: false});
             });
         }
     }

@@ -4,6 +4,7 @@ import "./style/style.scss"
 import {Auth} from "../../database/auth"
 import $ from "jquery";
 import {LoadingComponent} from "../loading/loadingComponent"
+import swal from 'sweetalert';
 
 export class Login extends React.Component {
     constructor(props) {
@@ -41,6 +42,13 @@ export class Login extends React.Component {
             Auth.login(this.state.email, this.state.password).then((err) => {
                 if (err['message'] === undefined && err['code'] === undefined) {
                     console.log(err);
+                    swal({
+                        title: "Log In successfully",
+                        icon: "success",
+                        dangerMode: false,
+                        buttons: false,
+                        timer:1000
+                    });
                 } else {
                     // this.validation();
                     if (err.code.includes('email')) {
@@ -48,23 +56,56 @@ export class Login extends React.Component {
                             content: {
                                 name: 'email',
                                 value: 'firebase',
-                                message: err.message
+                                message: 'email is badly formatted!!'
                             }
                         };
                         this.validation(valueSet)
                     } else if (err.code.includes('user-not-found')) {
+                        swal({
+                            title: "Something went wrong. Check your email and password again!",
+                            text: "There is no user record corresponding to this identifier",
+                            icon: "warning",
+                            dangerMode: true,
+                        });
                         let valueSet = {
                             content: {
                                 name: 'email',
                                 value: 'firebase',
-                                message: err.message
+                                message: 'There is no user record corresponding to this identifier'
                             }
                         };
                         this.validation(valueSet)
+                    }else if (err.code.includes('wrong-password')) {
+                        swal({
+                            title: "Wrong Password !!",
+                            icon: "warning",
+                            dangerMode: true,
+                        });
+                        let valueSet = {
+                            content: {
+                                name: 'password',
+                                value: 'firebase',
+                                message: 'Wrong Password'
+                            }
+                        };
+                        this.validation(valueSet)
+                    }else if (err.code.includes('network-request-failed')) {
+                        swal({
+                            title: "Something went wrong with your internet connection",
+                            icon: "warning",
+                            dangerMode: true,
+                        });
                     }
-                    console.log(err)
+                    else if (err.code.includes('auth/too-many-requests')) {
+                        swal({
+                            title: "Too many unsuccessful login attempts. Please try again later.",
+                            icon: "warning",
+                            dangerMode: true,
+                        });
+                    }
+                    console.log(err);
+                    this.setState({loadingStatus: false});
                 }
-                this.setState({loadingStatus: false});
             });
         }
         //
@@ -116,7 +157,7 @@ export class Login extends React.Component {
                 $('#passwordValidator-login').removeClass('valid');
                 $('#passwordValidator-login').addClass('not-valid');
                 this.setState({
-                    isValidEmail: valueSet.content.message
+                    isValidPassword: valueSet.content.message
                 });
                 return false;
             }else if(valueSet.content.value=== ''){
@@ -127,6 +168,14 @@ export class Login extends React.Component {
                 });
                 return false;
             }else if(valueSet.content.value!== ''){
+                if (valueSet.content.value.length <= 6) {
+                    $('#passwordValidator-login').removeClass('valid');
+                    $('#passwordValidator-login').addClass('not-valid');
+                    this.setState({
+                        isValidPassword: "More than 6 characters valid "
+                    });
+                    return false;
+                }
                 $('#passwordValidator-login').removeClass('not-valid');
                 $('#passwordValidator-login').addClass('valid');
                 this.setState({

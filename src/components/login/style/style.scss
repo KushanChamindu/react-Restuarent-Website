@@ -110,3 +110,20 @@
     outline: none;
   }
 }
+.swal-footer {
+  background-color: rgb(245, 248, 250);
+  margin-top: 32px;
+  border-top: 1px solid #E9EEF1;
+  overflow: hidden;
+}
+.swal-overlay {
+  background-color: rgba(125, 125, 125, 0.61);
+}
+.swal-button {
+  padding: 7px 19px;
+  border-radius: 2px;
+  font-size: 20px;
+}
+.swal-title {
+  margin-bottom: 28px;
+}
